@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  MP1
+
+  Created by Guest Account on 3/7/14.
+  Copyright (c) 2014 IIT. All rights reserved.
+*/
+"Temperature" = "Temperatur";
+"Distance" = "Abstand";
+"Volume" = "Band";
+"Convert" = "Konvertieren";
+"°F" = "°F";
+"°C" = "°C";
+"Miles" = "Meilen";
+"Kilometers" = "Kilometer";
+"Gallons" = "Gallonen";
+"Liters" = "Liter";

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="°F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0I-pc-vqj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2i3-KC-sGy"/>
+                                    <constraint firstAttribute="width" constant="128" id="Ox8-NT-Pge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuH-Lz-3hQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qQK-cw-1u5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IGl-Kq-wr1">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="bottomFieldEditingChanged:" destination="2" eventType="editingChanged" id="bEc-5A-5rZ"/>
+                                    <outlet property="delegate" destination="2" id="49J-hT-TcN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter temp" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xP-8d-8fw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HeB-qJ-Su1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="topFieldEditingChanged:" destination="2" eventType="editingChanged" id="2Vz-Xj-zWN"/>
+                                    <outlet property="delegate" destination="2" id="FwW-kz-qmi"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="segmentControl" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JM0-PX-Jpk">
+                                <segments>
+                                    <segment title="Temperature"/>
+                                    <segment title="Distance"/>
+                                    <segment title="Volume"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="2" eventType="valueChanged" id="uqn-Gx-X5m"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DH-fc-B06">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9Md-MK-umh"/>
+                                    <constraint firstAttribute="width" constant="95" id="ejw-RV-Ngj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButtonPressed:" destination="2" eventType="touchUpInside" id="VeH-tf-1PZ"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grk-7L-0rh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="CUS-HA-Fca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="⬇">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="2" eventType="touchUpInside" id="0ly-Vm-mAO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5DH-fc-B06" firstAttribute="bottom" secondItem="grk-7L-0rh" secondAttribute="bottom" type="default" id="4cx-k5-BKb"/>
+                            <constraint firstItem="JM0-PX-Jpk" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="88i-J7-Y6g"/>
+                            <constraint firstAttribute="trailing" secondItem="v0I-pc-vqj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8bD-zD-mbv"/>
+                            <constraint firstItem="2xP-8d-8fw" firstAttribute="top" secondItem="3" secondAttribute="top" constant="83" id="K97-ZG-MmA"/>
+                            <constraint firstItem="IGl-Kq-wr1" firstAttribute="top" secondItem="3" secondAttribute="top" constant="193" id="RUq-vd-eSu"/>
+                            <constraint firstItem="IGl-Kq-wr1" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SmL-Yd-kln"/>
+                            <constraint firstItem="5DH-fc-B06" firstAttribute="top" secondItem="3" secondAttribute="top" constant="141" id="Tmd-o3-QkF"/>
+                            <constraint firstItem="v0I-pc-vqj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="87" id="cOJ-Ye-hgS"/>
+                            <constraint firstItem="grk-7L-0rh" firstAttribute="trailing" secondItem="IGl-Kq-wr1" secondAttribute="trailing" type="default" id="fSo-qH-33n"/>
+                            <constraint firstItem="2xP-8d-8fw" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fe3-yw-Xhp"/>
+                            <constraint firstItem="vuH-Lz-3hQ" firstAttribute="leading" secondItem="IGl-Kq-wr1" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="fqh-fw-0fc"/>
+                            <constraint firstItem="5DH-fc-B06" firstAttribute="top" secondItem="grk-7L-0rh" secondAttribute="top" type="default" id="gem-2N-0le"/>
+                            <constraint firstAttribute="trailing" secondItem="vuH-Lz-3hQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="h1M-Af-6MB"/>
+                            <constraint firstItem="v0I-pc-vqj" firstAttribute="leading" secondItem="vuH-Lz-3hQ" secondAttribute="leading" type="default" id="jiX-e9-Iet"/>
+                            <constraint firstItem="v0I-pc-vqj" firstAttribute="leading" secondItem="2xP-8d-8fw" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kCP-Ld-UPG"/>
+                            <constraint firstItem="5DH-fc-B06" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kcv-ic-WvQ"/>
+                            <constraint firstItem="2xP-8d-8fw" firstAttribute="baseline" secondItem="v0I-pc-vqj" secondAttribute="baseline" type="default" id="rn8-I4-69E"/>
+                            <constraint firstItem="JM0-PX-Jpk" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="sNc-gg-0le"/>
+                            <constraint firstItem="vuH-Lz-3hQ" firstAttribute="baseline" secondItem="IGl-Kq-wr1" secondAttribute="baseline" type="default" id="tnd-kN-DNC"/>
+                            <constraint firstAttribute="trailing" secondItem="JM0-PX-Jpk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ySr-ee-Abq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomField" destination="IGl-Kq-wr1" id="Edg-ec-e1B"/>
+                        <outlet property="bottomLabel" destination="vuH-Lz-3hQ" id="dmm-N9-aM0"/>
+                        <outlet property="categorySegmentedControl" destination="JM0-PX-Jpk" id="Ui3-Ci-fTL"/>
+                        <outlet property="convertButton" destination="5DH-fc-B06" id="KsY-29-In0"/>
+                        <outlet property="directionButton" destination="grk-7L-0rh" id="3sd-9S-epw"/>
+                        <outlet property="topField" destination="2xP-8d-8fw" id="qHb-xZ-n80"/>
+                        <outlet property="topLabel" destination="v0I-pc-vqj" id="Q44-1f-R5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="bottomFieldEditingChanged:"/>
+                <relationship kind="action" name="convertButtonPressed:"/>
+                <relationship kind="action" name="directionButtonPressed:"/>
+                <relationship kind="action" name="segmentChanged:"/>
+                <relationship kind="action" name="topFieldEditingChanged:"/>
+                <relationship kind="outlet" name="bottomField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="bottomLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="categorySegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="convertButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="directionButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="topField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="topLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="viewOutlet" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
