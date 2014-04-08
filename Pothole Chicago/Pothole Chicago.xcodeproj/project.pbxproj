@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0060B318CFBF760060C552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060B218CFBF760060C552 /* UIKit.framework */; };
+		AC0060B518CFBF760060C552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060B418CFBF760060C552 /* Foundation.framework */; };
+		AC0060B718CFBF760060C552 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060B618CFBF760060C552 /* CoreGraphics.framework */; };
+		AC0060BD18CFBF760060C552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC0060BB18CFBF760060C552 /* InfoPlist.strings */; };
+		AC0060BF18CFBF760060C552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0060BE18CFBF760060C552 /* main.m */; };
+		AC0060C318CFBF760060C552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0060C218CFBF760060C552 /* AppDelegate.m */; };
+		AC0060C518CFBF760060C552 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0060C418CFBF760060C552 /* Default.png */; };
+		AC0060C718CFBF760060C552 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0060C618CFBF760060C552 /* Default@2x.png */; };
+		AC0060C918CFBF760060C552 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0060C818CFBF760060C552 /* Default-568h@2x.png */; };
+		AC0060CC18CFBF760060C552 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0060CA18CFBF760060C552 /* MainStoryboard.storyboard */; };
+		AC0060CF18CFBF760060C552 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0060CE18CFBF760060C552 /* MainViewController.m */; };
+		AC0060D718CFBF760060C552 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060D618CFBF760060C552 /* SenTestingKit.framework */; };
+		AC0060D818CFBF760060C552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060B218CFBF760060C552 /* UIKit.framework */; };
+		AC0060D918CFBF760060C552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060B418CFBF760060C552 /* Foundation.framework */; };
+		AC0060E118CFBF760060C552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC0060DF18CFBF760060C552 /* InfoPlist.strings */; };
+		AC0060E418CFBF760060C552 /* Pothole_ChicagoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0060E318CFBF760060C552 /* Pothole_ChicagoTests.m */; };
+		AC0060EF18CFC31C0060C552 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0060EE18CFC31C0060C552 /* UserInfoViewController.m */; };
+		AC0060F118CFC7050060C552 /* User Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0060F018CFC7050060C552 /* User Info.plist */; };
+		AC0060F318CFCAF70060C552 /* User Information.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0060F218CFCAF70060C552 /* User Information.plist */; };
+		AC0060F618CFD1DC0060C552 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0060F518CFD1DC0060C552 /* MapViewController.m */; };
+		AC0060F818CFD3140060C552 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0060F718CFD3140060C552 /* MapKit.framework */; };
+		AC0674D618EA032D000961EC /* DrivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0674D518EA032D000961EC /* DrivingViewController.m */; };
+		AC27B83B18EC819400543CCD /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27B83A18EC819400543CCD /* LogViewController.m */; };
+		AC27B83F18EC85CF00543CCD /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27B83E18EC85CF00543CCD /* MyAnnotation.m */; };
+		AC27B84118EC87E700543CCD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC27B84018EC87E700543CCD /* iAd.framework */; };
+		AC27B84418EC8B7000543CCD /* PotholeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27B84318EC8B7000543CCD /* PotholeViewController.m */; };
+		AC56BCEE18EE1A070061CB64 /* WelcomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC56BCED18EE1A070061CB64 /* WelcomeScreenViewController.m */; };
+		AC56BCF118EE1B280061CB64 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF018EE1B280061CB64 /* Parse.framework */; };
+		AC56BCFA18EE1BA50061CB64 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF218EE1BA50061CB64 /* CFNetwork.framework */; };
+		AC56BCFB18EE1BA50061CB64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF318EE1BA50061CB64 /* CoreLocation.framework */; };
+		AC56BCFC18EE1BA50061CB64 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF418EE1BA50061CB64 /* libz.dylib */; };
+		AC56BCFD18EE1BA50061CB64 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF518EE1BA50061CB64 /* MobileCoreServices.framework */; };
+		AC56BCFE18EE1BA50061CB64 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF618EE1BA50061CB64 /* QuartzCore.framework */; };
+		AC56BCFF18EE1BA50061CB64 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF718EE1BA50061CB64 /* Security.framework */; };
+		AC56BD0018EE1BA50061CB64 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF818EE1BA50061CB64 /* StoreKit.framework */; };
+		AC56BD0118EE1BA50061CB64 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BCF918EE1BA50061CB64 /* SystemConfiguration.framework */; };
+		AC56BD0418EE1C900061CB64 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC56BD0318EE1C900061CB64 /* LogInViewController.m */; };
+		AC56BD0618EE23A70061CB64 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56BD0518EE23A70061CB64 /* AudioToolbox.framework */; };
+		AC7E8ADB18EDFC1E00554463 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AC318EDFC1E00554463 /* NSObject+SBJson.m */; };
+		AC7E8ADC18EDFC1E00554463 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AC618EDFC1E00554463 /* SBJsonParser.m */; };
+		AC7E8ADD18EDFC1E00554463 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AC818EDFC1E00554463 /* SBJsonStreamParser.m */; };
+		AC7E8ADE18EDFC1E00554463 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8ACA18EDFC1E00554463 /* SBJsonStreamParserAccumulator.m */; };
+		AC7E8ADF18EDFC1E00554463 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8ACC18EDFC1E00554463 /* SBJsonStreamParserAdapter.m */; };
+		AC7E8AE018EDFC1E00554463 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8ACE18EDFC1E00554463 /* SBJsonStreamParserState.m */; };
+		AC7E8AE118EDFC1E00554463 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AD018EDFC1E00554463 /* SBJsonStreamWriter.m */; };
+		AC7E8AE218EDFC1E00554463 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AD218EDFC1E00554463 /* SBJsonStreamWriterAccumulator.m */; };
+		AC7E8AE318EDFC1E00554463 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AD418EDFC1E00554463 /* SBJsonStreamWriterState.m */; };
+		AC7E8AE418EDFC1E00554463 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AD618EDFC1E00554463 /* SBJsonTokeniser.m */; };
+		AC7E8AE518EDFC1E00554463 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AD818EDFC1E00554463 /* SBJsonUTF8Stream.m */; };
+		AC7E8AE618EDFC1E00554463 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8ADA18EDFC1E00554463 /* SBJsonWriter.m */; };
+		AC7E8AE918EDFCD500554463 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E8AE818EDFCD500554463 /* DetailViewController.m */; };
+		AC9F704B18F3170E001F6BE4 /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F704A18F3170E001F6BE4 /* ActivityView.m */; };
+		AC9F704F18F31CE0001F6BE4 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F704E18F31CE0001F6BE4 /* SignUpViewController.m */; };
+		ACF9B1E518ECCAB20041237F /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF9B1E418ECCAB20041237F /* UserInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0060DA18CFBF760060C552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0060A518CFBF760060C552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0060AD18CFBF760060C552;
+			remoteInfo = "Pothole Chicago";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC0060AE18CFBF760060C552 /* Pothole Chicago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pothole Chicago.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0060B218CFBF760060C552 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC0060B418CFBF760060C552 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC0060B618CFBF760060C552 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC0060BA18CFBF760060C552 /* Pothole Chicago-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pothole Chicago-Info.plist"; sourceTree = "<group>"; };
+		AC0060BC18CFBF760060C552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC0060BE18CFBF760060C552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC0060C018CFBF760060C552 /* Pothole Chicago-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pothole Chicago-Prefix.pch"; sourceTree = "<group>"; };
+		AC0060C118CFBF760060C552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC0060C218CFBF760060C552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC0060C418CFBF760060C552 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC0060C618CFBF760060C552 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AC0060C818CFBF760060C552 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC0060CB18CFBF760060C552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AC0060CD18CFBF760060C552 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		AC0060CE18CFBF760060C552 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		AC0060D518CFBF760060C552 /* Pothole ChicagoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pothole ChicagoTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0060D618CFBF760060C552 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AC0060DE18CFBF760060C552 /* Pothole ChicagoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pothole ChicagoTests-Info.plist"; sourceTree = "<group>"; };
+		AC0060E018CFBF760060C552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC0060E218CFBF760060C552 /* Pothole_ChicagoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pothole_ChicagoTests.h; sourceTree = "<group>"; };
+		AC0060E318CFBF760060C552 /* Pothole_ChicagoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pothole_ChicagoTests.m; sourceTree = "<group>"; };
+		AC0060ED18CFC31C0060C552 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		AC0060EE18CFC31C0060C552 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		AC0060F018CFC7050060C552 /* User Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "User Info.plist"; sourceTree = "<group>"; };
+		AC0060F218CFCAF70060C552 /* User Information.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "User Information.plist"; sourceTree = "<group>"; };
+		AC0060F418CFD1DC0060C552 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		AC0060F518CFD1DC0060C552 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		AC0060F718CFD3140060C552 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AC0674D418EA032D000961EC /* DrivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrivingViewController.h; sourceTree = "<group>"; };
+		AC0674D518EA032D000961EC /* DrivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrivingViewController.m; sourceTree = "<group>"; };
+		AC27B83918EC819400543CCD /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		AC27B83A18EC819400543CCD /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		AC27B83D18EC85CF00543CCD /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		AC27B83E18EC85CF00543CCD /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		AC27B84018EC87E700543CCD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		AC27B84218EC8B7000543CCD /* PotholeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotholeViewController.h; sourceTree = "<group>"; };
+		AC27B84318EC8B7000543CCD /* PotholeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PotholeViewController.m; sourceTree = "<group>"; };
+		AC56BCEC18EE1A070061CB64 /* WelcomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScreenViewController.h; sourceTree = "<group>"; };
+		AC56BCED18EE1A070061CB64 /* WelcomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreenViewController.m; sourceTree = "<group>"; };
+		AC56BCF018EE1B280061CB64 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AC56BCF218EE1BA50061CB64 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AC56BCF318EE1BA50061CB64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AC56BCF418EE1BA50061CB64 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AC56BCF518EE1BA50061CB64 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AC56BCF618EE1BA50061CB64 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AC56BCF718EE1BA50061CB64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AC56BCF818EE1BA50061CB64 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AC56BCF918EE1BA50061CB64 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC56BD0218EE1C900061CB64 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		AC56BD0318EE1C900061CB64 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		AC56BD0518EE23A70061CB64 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AC7E8AC218EDFC1E00554463 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		AC7E8AC318EDFC1E00554463 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		AC7E8AC418EDFC1E00554463 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		AC7E8AC518EDFC1E00554463 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		AC7E8AC618EDFC1E00554463 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		AC7E8AC718EDFC1E00554463 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		AC7E8AC818EDFC1E00554463 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		AC7E8AC918EDFC1E00554463 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		AC7E8ACA18EDFC1E00554463 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		AC7E8ACB18EDFC1E00554463 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		AC7E8ACC18EDFC1E00554463 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		AC7E8ACD18EDFC1E00554463 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		AC7E8ACE18EDFC1E00554463 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		AC7E8ACF18EDFC1E00554463 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		AC7E8AD018EDFC1E00554463 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		AC7E8AD118EDFC1E00554463 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		AC7E8AD218EDFC1E00554463 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		AC7E8AD318EDFC1E00554463 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		AC7E8AD418EDFC1E00554463 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		AC7E8AD518EDFC1E00554463 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		AC7E8AD618EDFC1E00554463 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		AC7E8AD718EDFC1E00554463 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		AC7E8AD818EDFC1E00554463 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		AC7E8AD918EDFC1E00554463 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		AC7E8ADA18EDFC1E00554463 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		AC7E8AE718EDFCD500554463 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AC7E8AE818EDFCD500554463 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AC9F704918F3170E001F6BE4 /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityView.h; sourceTree = "<group>"; };
+		AC9F704A18F3170E001F6BE4 /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityView.m; sourceTree = "<group>"; };
+		AC9F704D18F31CDF001F6BE4 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		AC9F704E18F31CE0001F6BE4 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		ACF9B1E318ECCAB20041237F /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		ACF9B1E418ECCAB20041237F /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0060AB18CFBF760060C552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC56BD0618EE23A70061CB64 /* AudioToolbox.framework in Frameworks */,
+				AC56BCFA18EE1BA50061CB64 /* CFNetwork.framework in Frameworks */,
+				AC56BCFB18EE1BA50061CB64 /* CoreLocation.framework in Frameworks */,
+				AC56BCFC18EE1BA50061CB64 /* libz.dylib in Frameworks */,
+				AC56BCFD18EE1BA50061CB64 /* MobileCoreServices.framework in Frameworks */,
+				AC56BCFE18EE1BA50061CB64 /* QuartzCore.framework in Frameworks */,
+				AC56BCFF18EE1BA50061CB64 /* Security.framework in Frameworks */,
+				AC56BD0018EE1BA50061CB64 /* StoreKit.framework in Frameworks */,
+				AC56BD0118EE1BA50061CB64 /* SystemConfiguration.framework in Frameworks */,
+				AC27B84118EC87E700543CCD /* iAd.framework in Frameworks */,
+				AC0060F818CFD3140060C552 /* MapKit.framework in Frameworks */,
+				AC0060B318CFBF760060C552 /* UIKit.framework in Frameworks */,
+				AC0060B518CFBF760060C552 /* Foundation.framework in Frameworks */,
+				AC0060B718CFBF760060C552 /* CoreGraphics.framework in Frameworks */,
+				AC56BCF118EE1B280061CB64 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0060D118CFBF760060C552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0060D718CFBF760060C552 /* SenTestingKit.framework in Frameworks */,
+				AC0060D818CFBF760060C552 /* UIKit.framework in Frameworks */,
+				AC0060D918CFBF760060C552 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0060A318CFBF760060C552 = {
+			isa = PBXGroup;
+			children = (
+				AC7E8AC118EDFB0000554463 /* JSON */,
+				AC0060F018CFC7050060C552 /* User Info.plist */,
+				AC0060F218CFCAF70060C552 /* User Information.plist */,
+				AC0060B818CFBF760060C552 /* Pothole Chicago */,
+				AC0060DC18CFBF760060C552 /* Pothole ChicagoTests */,
+				AC0060B118CFBF760060C552 /* Frameworks */,
+				AC0060AF18CFBF760060C552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0060AF18CFBF760060C552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0060AE18CFBF760060C552 /* Pothole Chicago.app */,
+				AC0060D518CFBF760060C552 /* Pothole ChicagoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0060B118CFBF760060C552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC56BD0518EE23A70061CB64 /* AudioToolbox.framework */,
+				AC56BCF218EE1BA50061CB64 /* CFNetwork.framework */,
+				AC56BCF318EE1BA50061CB64 /* CoreLocation.framework */,
+				AC56BCF418EE1BA50061CB64 /* libz.dylib */,
+				AC56BCF518EE1BA50061CB64 /* MobileCoreServices.framework */,
+				AC56BCF618EE1BA50061CB64 /* QuartzCore.framework */,
+				AC56BCF718EE1BA50061CB64 /* Security.framework */,
+				AC56BCF818EE1BA50061CB64 /* StoreKit.framework */,
+				AC56BCF918EE1BA50061CB64 /* SystemConfiguration.framework */,
+				AC56BCF018EE1B280061CB64 /* Parse.framework */,
+				AC27B84018EC87E700543CCD /* iAd.framework */,
+				AC0060F718CFD3140060C552 /* MapKit.framework */,
+				AC0060B218CFBF760060C552 /* UIKit.framework */,
+				AC0060B418CFBF760060C552 /* Foundation.framework */,
+				AC0060B618CFBF760060C552 /* CoreGraphics.framework */,
+				AC0060D618CFBF760060C552 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC0060B818CFBF760060C552 /* Pothole Chicago */ = {
+			isa = PBXGroup;
+			children = (
+				AC27B83D18EC85CF00543CCD /* MyAnnotation.h */,
+				AC27B83E18EC85CF00543CCD /* MyAnnotation.m */,
+				AC0060C118CFBF760060C552 /* AppDelegate.h */,
+				AC0060C218CFBF760060C552 /* AppDelegate.m */,
+				AC0060CA18CFBF760060C552 /* MainStoryboard.storyboard */,
+				AC9F704D18F31CDF001F6BE4 /* SignUpViewController.h */,
+				AC9F704E18F31CE0001F6BE4 /* SignUpViewController.m */,
+				AC56BD0218EE1C900061CB64 /* LogInViewController.h */,
+				AC56BD0318EE1C900061CB64 /* LogInViewController.m */,
+				AC9F704918F3170E001F6BE4 /* ActivityView.h */,
+				AC9F704A18F3170E001F6BE4 /* ActivityView.m */,
+				AC56BCEC18EE1A070061CB64 /* WelcomeScreenViewController.h */,
+				AC56BCED18EE1A070061CB64 /* WelcomeScreenViewController.m */,
+				AC7E8AE718EDFCD500554463 /* DetailViewController.h */,
+				AC7E8AE818EDFCD500554463 /* DetailViewController.m */,
+				AC27B84218EC8B7000543CCD /* PotholeViewController.h */,
+				AC27B84318EC8B7000543CCD /* PotholeViewController.m */,
+				AC27B83918EC819400543CCD /* LogViewController.h */,
+				AC27B83A18EC819400543CCD /* LogViewController.m */,
+				AC0674D418EA032D000961EC /* DrivingViewController.h */,
+				AC0674D518EA032D000961EC /* DrivingViewController.m */,
+				AC0060F418CFD1DC0060C552 /* MapViewController.h */,
+				AC0060F518CFD1DC0060C552 /* MapViewController.m */,
+				AC0060ED18CFC31C0060C552 /* UserInfoViewController.h */,
+				AC0060EE18CFC31C0060C552 /* UserInfoViewController.m */,
+				ACF9B1E318ECCAB20041237F /* UserInfo.h */,
+				ACF9B1E418ECCAB20041237F /* UserInfo.m */,
+				AC0060CD18CFBF760060C552 /* MainViewController.h */,
+				AC0060CE18CFBF760060C552 /* MainViewController.m */,
+				AC0060B918CFBF760060C552 /* Supporting Files */,
+			);
+			path = "Pothole Chicago";
+			sourceTree = "<group>";
+		};
+		AC0060B918CFBF760060C552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0060BA18CFBF760060C552 /* Pothole Chicago-Info.plist */,
+				AC0060BB18CFBF760060C552 /* InfoPlist.strings */,
+				AC0060BE18CFBF760060C552 /* main.m */,
+				AC0060C018CFBF760060C552 /* Pothole Chicago-Prefix.pch */,
+				AC0060C418CFBF760060C552 /* Default.png */,
+				AC0060C618CFBF760060C552 /* Default@2x.png */,
+				AC0060C818CFBF760060C552 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC0060DC18CFBF760060C552 /* Pothole ChicagoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0060E218CFBF760060C552 /* Pothole_ChicagoTests.h */,
+				AC0060E318CFBF760060C552 /* Pothole_ChicagoTests.m */,
+				AC0060DD18CFBF760060C552 /* Supporting Files */,
+			);
+			path = "Pothole ChicagoTests";
+			sourceTree = "<group>";
+		};
+		AC0060DD18CFBF760060C552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0060DE18CFBF760060C552 /* Pothole ChicagoTests-Info.plist */,
+				AC0060DF18CFBF760060C552 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC7E8AC118EDFB0000554463 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E8AC218EDFC1E00554463 /* NSObject+SBJson.h */,
+				AC7E8AC318EDFC1E00554463 /* NSObject+SBJson.m */,
+				AC7E8AC418EDFC1E00554463 /* SBJson.h */,
+				AC7E8AC518EDFC1E00554463 /* SBJsonParser.h */,
+				AC7E8AC618EDFC1E00554463 /* SBJsonParser.m */,
+				AC7E8AC718EDFC1E00554463 /* SBJsonStreamParser.h */,
+				AC7E8AC818EDFC1E00554463 /* SBJsonStreamParser.m */,
+				AC7E8AC918EDFC1E00554463 /* SBJsonStreamParserAccumulator.h */,
+				AC7E8ACA18EDFC1E00554463 /* SBJsonStreamParserAccumulator.m */,
+				AC7E8ACB18EDFC1E00554463 /* SBJsonStreamParserAdapter.h */,
+				AC7E8ACC18EDFC1E00554463 /* SBJsonStreamParserAdapter.m */,
+				AC7E8ACD18EDFC1E00554463 /* SBJsonStreamParserState.h */,
+				AC7E8ACE18EDFC1E00554463 /* SBJsonStreamParserState.m */,
+				AC7E8ACF18EDFC1E00554463 /* SBJsonStreamWriter.h */,
+				AC7E8AD018EDFC1E00554463 /* SBJsonStreamWriter.m */,
+				AC7E8AD118EDFC1E00554463 /* SBJsonStreamWriterAccumulator.h */,
+				AC7E8AD218EDFC1E00554463 /* SBJsonStreamWriterAccumulator.m */,
+				AC7E8AD318EDFC1E00554463 /* SBJsonStreamWriterState.h */,
+				AC7E8AD418EDFC1E00554463 /* SBJsonStreamWriterState.m */,
+				AC7E8AD518EDFC1E00554463 /* SBJsonTokeniser.h */,
+				AC7E8AD618EDFC1E00554463 /* SBJsonTokeniser.m */,
+				AC7E8AD718EDFC1E00554463 /* SBJsonUTF8Stream.h */,
+				AC7E8AD818EDFC1E00554463 /* SBJsonUTF8Stream.m */,
+				AC7E8AD918EDFC1E00554463 /* SBJsonWriter.h */,
+				AC7E8ADA18EDFC1E00554463 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0060AD18CFBF760060C552 /* Pothole Chicago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0060E718CFBF760060C552 /* Build configuration list for PBXNativeTarget "Pothole Chicago" */;
+			buildPhases = (
+				AC0060AA18CFBF760060C552 /* Sources */,
+				AC0060AB18CFBF760060C552 /* Frameworks */,
+				AC0060AC18CFBF760060C552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pothole Chicago";
+			productName = "Pothole Chicago";
+			productReference = AC0060AE18CFBF760060C552 /* Pothole Chicago.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0060D418CFBF760060C552 /* Pothole ChicagoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0060EA18CFBF760060C552 /* Build configuration list for PBXNativeTarget "Pothole ChicagoTests" */;
+			buildPhases = (
+				AC0060D018CFBF760060C552 /* Sources */,
+				AC0060D118CFBF760060C552 /* Frameworks */,
+				AC0060D218CFBF760060C552 /* Resources */,
+				AC0060D318CFBF760060C552 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0060DB18CFBF760060C552 /* PBXTargetDependency */,
+			);
+			name = "Pothole ChicagoTests";
+			productName = "Pothole ChicagoTests";
+			productReference = AC0060D518CFBF760060C552 /* Pothole ChicagoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0060A518CFBF760060C552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = DK;
+			};
+			buildConfigurationList = AC0060A818CFBF760060C552 /* Build configuration list for PBXProject "Pothole Chicago" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC0060A318CFBF760060C552;
+			productRefGroup = AC0060AF18CFBF760060C552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0060AD18CFBF760060C552 /* Pothole Chicago */,
+				AC0060D418CFBF760060C552 /* Pothole ChicagoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0060AC18CFBF760060C552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0060BD18CFBF760060C552 /* InfoPlist.strings in Resources */,
+				AC0060C518CFBF760060C552 /* Default.png in Resources */,
+				AC0060C718CFBF760060C552 /* Default@2x.png in Resources */,
+				AC0060C918CFBF760060C552 /* Default-568h@2x.png in Resources */,
+				AC0060CC18CFBF760060C552 /* MainStoryboard.storyboard in Resources */,
+				AC0060F118CFC7050060C552 /* User Info.plist in Resources */,
+				AC0060F318CFCAF70060C552 /* User Information.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0060D218CFBF760060C552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0060E118CFBF760060C552 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC0060D318CFBF760060C552 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0060AA18CFBF760060C552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0060BF18CFBF760060C552 /* main.m in Sources */,
+				AC0060C318CFBF760060C552 /* AppDelegate.m in Sources */,
+				AC0060CF18CFBF760060C552 /* MainViewController.m in Sources */,
+				AC0060EF18CFC31C0060C552 /* UserInfoViewController.m in Sources */,
+				AC0060F618CFD1DC0060C552 /* MapViewController.m in Sources */,
+				AC0674D618EA032D000961EC /* DrivingViewController.m in Sources */,
+				AC27B83B18EC819400543CCD /* LogViewController.m in Sources */,
+				AC27B83F18EC85CF00543CCD /* MyAnnotation.m in Sources */,
+				AC27B84418EC8B7000543CCD /* PotholeViewController.m in Sources */,
+				ACF9B1E518ECCAB20041237F /* UserInfo.m in Sources */,
+				AC7E8ADB18EDFC1E00554463 /* NSObject+SBJson.m in Sources */,
+				AC7E8ADC18EDFC1E00554463 /* SBJsonParser.m in Sources */,
+				AC7E8ADD18EDFC1E00554463 /* SBJsonStreamParser.m in Sources */,
+				AC7E8ADE18EDFC1E00554463 /* SBJsonStreamParserAccumulator.m in Sources */,
+				AC7E8ADF18EDFC1E00554463 /* SBJsonStreamParserAdapter.m in Sources */,
+				AC7E8AE018EDFC1E00554463 /* SBJsonStreamParserState.m in Sources */,
+				AC7E8AE118EDFC1E00554463 /* SBJsonStreamWriter.m in Sources */,
+				AC7E8AE218EDFC1E00554463 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				AC7E8AE318EDFC1E00554463 /* SBJsonStreamWriterState.m in Sources */,
+				AC7E8AE418EDFC1E00554463 /* SBJsonTokeniser.m in Sources */,
+				AC7E8AE518EDFC1E00554463 /* SBJsonUTF8Stream.m in Sources */,
+				AC7E8AE618EDFC1E00554463 /* SBJsonWriter.m in Sources */,
+				AC7E8AE918EDFCD500554463 /* DetailViewController.m in Sources */,
+				AC56BCEE18EE1A070061CB64 /* WelcomeScreenViewController.m in Sources */,
+				AC56BD0418EE1C900061CB64 /* LogInViewController.m in Sources */,
+				AC9F704B18F3170E001F6BE4 /* ActivityView.m in Sources */,
+				AC9F704F18F31CE0001F6BE4 /* SignUpViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0060D018CFBF760060C552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0060E418CFBF760060C552 /* Pothole_ChicagoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0060DB18CFBF760060C552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0060AD18CFBF760060C552 /* Pothole Chicago */;
+			targetProxy = AC0060DA18CFBF760060C552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0060BB18CFBF760060C552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0060BC18CFBF760060C552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC0060CA18CFBF760060C552 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0060CB18CFBF760060C552 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0060DF18CFBF760060C552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0060E018CFBF760060C552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC0060E518CFBF760060C552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC0060E618CFBF760060C552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0060E818CFBF760060C552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pothole Chicago/Pothole Chicago-Prefix.pch";
+				INFOPLIST_FILE = "Pothole Chicago/Pothole Chicago-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC0060E918CFBF760060C552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pothole Chicago/Pothole Chicago-Prefix.pch";
+				INFOPLIST_FILE = "Pothole Chicago/Pothole Chicago-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AC0060EB18CFBF760060C552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pothole Chicago.app/Pothole Chicago";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pothole Chicago/Pothole Chicago-Prefix.pch";
+				INFOPLIST_FILE = "Pothole ChicagoTests/Pothole ChicagoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AC0060EC18CFBF760060C552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pothole Chicago.app/Pothole Chicago";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pothole Chicago/Pothole Chicago-Prefix.pch";
+				INFOPLIST_FILE = "Pothole ChicagoTests/Pothole ChicagoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0060A818CFBF760060C552 /* Build configuration list for PBXProject "Pothole Chicago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0060E518CFBF760060C552 /* Debug */,
+				AC0060E618CFBF760060C552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0060E718CFBF760060C552 /* Build configuration list for PBXNativeTarget "Pothole Chicago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0060E818CFBF760060C552 /* Debug */,
+				AC0060E918CFBF760060C552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0060EA18CFBF760060C552 /* Build configuration list for PBXNativeTarget "Pothole ChicagoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0060EB18CFBF760060C552 /* Debug */,
+				AC0060EC18CFBF760060C552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0060A518CFBF760060C552 /* Project object */;
+}
