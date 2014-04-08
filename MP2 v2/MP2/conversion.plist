@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Categories</key>
+	<array>
+		<string>Area</string>
+		<string>Length</string>
+		<string>Temperature</string>
+		<string>Time</string>
+		<string>Volume</string>
+	</array>
+	<key>Base_Types</key>
+	<dict>
+		<key>Area</key>
+		<string>square meter</string>
+		<key>Length</key>
+		<string>meter</string>
+		<key>Temperature</key>
+		<string>Kelvin</string>
+		<key>Time</key>
+		<string>second</string>
+		<key>Volume</key>
+		<string>liter</string>
+	</dict>
+	<key>Area</key>
+	<dict>
+		<key>square meter</key>
+		<integer>1</integer>
+		<key>square km</key>
+		<integer>1000000</integer>
+		<key>acre</key>
+		<real>4046.86</real>
+	</dict>
+	<key>Length</key>
+	<dict>
+		<key>meter</key>
+		<integer>1</integer>
+		<key>kilometer</key>
+		<integer>1000</integer>
+		<key>millimeter</key>
+		<real>0.001</real>
+		<key>inch</key>
+		<real>0.0254</real>
+		<key>feet</key>
+		<real>0.3048</real>
+		<key>yard</key>
+		<real>0.9144</real>
+		<key>mile</key>
+		<real>1609.34</real>
+	</dict>
+	<key>Temperature</key>
+	<dict>
+		<key>Kelvin</key>
+		<integer>1</integer>
+		<key>Celcius</key>
+		<array>
+			<integer>1</integer>
+			<real>273.15</real>
+		</array>
+		<key>Fahrenheit</key>
+		<array>
+			<real>0.5555555555</real>
+			<real>255.37222222</real>
+		</array>
+	</dict>
+	<key>Time</key>
+	<dict>
+		<key>second</key>
+		<integer>1</integer>
+		<key>millisecond</key>
+		<real>0.001</real>
+		<key>minute</key>
+		<integer>60</integer>
+		<key>hour</key>
+		<integer>3600</integer>
+		<key>day</key>
+		<integer>86400</integer>
+	</dict>
+	<key>Volume</key>
+	<dict>
+		<key>liter</key>
+		<integer>1</integer>
+		<key>cubic meter</key>
+		<real>0.001</real>
+		<key>milliliter</key>
+		<integer>1000</integer>
+		<key>cubic feet</key>
+		<real>0.0353147</real>
+		<key>gallon</key>
+		<real>0.264172</real>
+	</dict>
+</dict>
+</plist>
